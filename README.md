@@ -16,6 +16,42 @@ Additionally, you'll need to set up Gymnasium. You can install it via pip:
 pip install gymnasium
 ```
 
+## Environment Setup
+
+1. **Create a Conda Environment**: Create a new Conda environment with a compatible Python version.
+
+   ```bash
+   conda create --name unity-ml python=3.10.12
+   conda activate unity-ml
+   ```
+
+2. **Install Required Packages**: Install the necessary packages for ML-Agents and Gymnasium.
+
+   ```bash
+   pip install mlagents==0.30.0 gym-unity==0.28.0 gymnasium
+   ```
+
+3. **Clone the ML-Agents Repository**: Get access to the pre-built environments.
+
+   ```bash
+   git clone https://github.com/Unity-Technologies/ml-agents.git
+   cd ml-agents
+   ```
+
+4. **Install ML-Agents Environments**: Navigate to the `ml-agents-envs` directory and install the package.
+
+   ```bash
+   cd ml-agents-envs
+   pip install .
+   ```
+
+5. **Install ML-Agents**: Navigate back to the `ml-agents` directory and install the package.
+
+   ```bash
+   cd ../ml-agents
+   python -m pip install .
+   ```
+
 ## Usage
 
 1. Clone the repository:
